@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.upslp.edu.mx/upslp/wp-content/themes/icemagtheme/images/demo/icemaglogo.png"/>
+    <title>Ropa Online</title>
+    <style>
+        table
+        {
+            border-spacing: 1.5cm;
+        }
+        td, th
+        {
+            border-spacing: 1.5cm;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Tienda de Ropa Online</h1>
+    <form method="post" action="" enctype="text/plain">
+        <fieldset>
+            <legend>Información del cliente</legend>
+            <table align="center">
+                <thead>
+                <tr>
+                    <td><label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" size="25" title="Nombre"/></td><br/>
+                    <td><label for="Ap">Apellido paterno:</label>
+                    <input type="text" name="Ap" id="Ap" placeholder="Apellido paterno" size="25" title="Ap"/></td>
+                    <td><label for="Am">Apellido materno:</label>
+                    <input type="text" name="Am" id="Am" placeholder="Apellido materno" size="25" title="Am"/></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><label for="usuario">Usuario:</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuario" size="25" title="usuario"/></td>
+                    <td><label for="password">Contraseña:</label>
+                    <input type="text" name="password" id="password" placeholder="Password" size="30" title="password"/></td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset><br/>
+        
+        <fieldset>
+            <legend>Datos de Facturación</legend>
+            <table align="center">
+                <thead>
+                <tr>
+                    <td><label for="calle">Calle:</label>
+                    <input type="text" name="calle" id="calle" placeholder="Calle" size="25" title="calle"/></td><br/>
+                    <td><label for="num">Num:</label>
+                    <input type="text" name="num" id="num" placeholder="Num. Exterior" size="25" title="num"/></td>
+                    <td><label for="colonia">Colonia:</label>
+                    <input type="text" name="colonia" id="colonia" placeholder="Colonia" size="25" title="colonia"/></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><label for="E-mail">E-mail:</label>
+                    <input type="text" name="E-mail" id="E-mail" placeholder="E-mail" size="24" title="E-mail"/></td>
+                    <td><label for="cp">Código Postal:</label>
+                    <input type="text" name="cp" id="cp" placeholder="C. P." size="17" title="cp"/></td>
+                    <td><label for="rfc">RFC:</label>
+                    <input type="text" name="rfc" id="rfc" placeholder="RFC" size="28" title="rfc"/></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td><label for="fecha">Fecha de la venta:</label>
+                    <input type="date" name="fecha" id="fecha"/></td>
+                </tr>
+                </tfoot>
+            </table>
+        </fieldset><br/>
+        <fieldset>
+            <legend>Datos del artículo adquirido</legend>
+            <table align="center">
+                <thead>
+                <tr>
+                    <td>
+                    <select size="5" multiple>
+                    <optgroup label="Tipo">
+                        <option value="1" selected>Vestido</option>
+                        <option value="2">Falda</option>
+                        <option value="3">Pantalón</option>
+                        <option value="4">Playera</option>
+                        <option value="5">Camisa</option>
+                    </optgroup></select></td>
+                    <td>
+                        <h4>Talla</h4>
+                        <input type="checkbox" name="forma1" id="forma1" value="tdc"/>
+                        <label for="forma1">Chico</label><br/>
+
+                        <input type="checkbox" name="forma2" id="forma2" value="efe"/>
+                        <label for="forma2">Mediano</label><br/> 
+        
+                        <input type="checkbox" name="forma3" id="forma3" value="tdd"/>
+                        <label for="forma3">Grande</label><br/>
+                    </td>
+                    <td>
+                        <label for="colores">Selecciona un color:</label><br/>
+                        <input type="color" name="colores" id="colores"/><br/>
+                    </td>
+                </tr>
+                </thead>
+            </table>
+
+            <input type="submit" name="enviar" id="enviar" value="Enviar formulario"/>
+            <input type="reset" name="borrar" id="borrar" value="Borrar Formulario"
+        </fieldset>
+    </form>
+</body>
+</html>
