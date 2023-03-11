@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://static.cinepolis.com/img/cinepolis_share.png"/>
+    <title>Boletos</title>
+    <style>
+        table
+        {
+            border-spacing: 1.5cm;
+        }
+        td, th
+        {
+            border-spacing: 1.5cm;
+        }
+    </style>
+</head>
+<body background="fondosushiroll.jpg" style="background-repeat: no-repeat; background-size: 100%; background-attachment: fixed;">
+    <img src="cinepolislogo.png" type="image/png" width="60" height="60"/>
+    <h1 align="center" style="color: white">¡Compre sus boletos ahora en línea!</h1>
+    <form method="post" action="" enctype="text/plain">
+        <table align="center">
+            <thead>
+            <tr>
+                <td style="color: white"><label for="pelicula">¿Qué película desea ver?</label><br/>
+                <input type="text" name="pelicula" id="pelicula" placeholder="Ej. Shazam" size="20"/></td>
+
+                <td style="color: white"><label for="fechan">Indique la fecha de la función:</label><br/>
+                <input type="date" name="fechan" id="fechan" placeholder="Fecha de función"/></td>
+
+                <td style="color: white"><label for="hora">Hora de registro</label><br/>
+                <input type="time" name="hora" id="hora"/></td>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td style="color: white"><label for="boleto">¿Cuántos boletos desea?:</label><br/>
+                    <input type="number" name="boleto" id="boleto" placeholder="Ej. 2" size="20"/></td>
+
+                    <td style="color: white"><h4>Selecciona el idioma:</h4>
+                        <input type="checkbox" name="forma1" id="forma1" value="tdc"/>
+                        <label for="forma1">Español latino</label><br/>
+                    
+                        <input type="checkbox" name="forma2" id="forma2" value="tdd"/>
+                        <label for="forma2">Inglés</label><br/>
+
+                        <input type="checkbox" name="forma3" id="forma3" value="tdd"/>
+                        <label for="forma3">Sub. Español</label>
+                    </td>
+
+                    <td style="color: white"><label for="butaca">Fila y numero de butacas</label><br/>
+                    <input type="text" name="butaca" id="butaca" placeholder="Ej. G10, C9, A8..." size="20"/></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="3"><img src="butacas.png" type="image/png" width="700" height="500"/></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td style="color: white"><h4>Selecciona tu forma de pago:</h4>
+                        <input type="checkbox" name="forma1" id="forma1" value="tdc"/>
+                        <label for="forma1">Tarjetas de crédito</label><br/>
+                    
+                        <input type="checkbox" name="forma2" id="forma2" value="tdd"/>
+                        <label for="forma2">Tarjetas de débito</label>
+                    </td>
+
+                    <td style="color: white"><label for="numero">Número de tarjeta:</label><br/>
+                    <input type="text" name="numero" id="numero" placeholder="Num. tarjeta"/></td>
+
+                    <td><input type="submit" name="comprar" id="comprar" value="Realizar compra"/></td>
+                </tr>
+                <tr>
+                    <td style="color: white"><label for="califica">Califica el servicio</label><br/>
+                    <input type="range" min="1" max="10" value="7"/></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>

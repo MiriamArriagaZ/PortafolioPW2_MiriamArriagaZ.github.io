@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://static.cinepolis.com/img/cinepolis_share.png"/>
+    <title>Cinépolis - Regístrate</title>
+    <style>
+        table
+        {
+            border-spacing: 1cm;
+        }
+        td, th
+        {
+            border-spacing: 1.5cm;
+        }
+    </style>
+</head>
+<body background="cinepolisfondo.jpg" style="background-repeat: no-repeat; background-size: 100%; background-attachment: fixed;">
+    <a href="index.html" target="_blank"><input type="submit" name="inicio" id="inicio" value="Regresar al index"/></a>
+    <a href="ComprarBoletos.html" target="_blank"><input type="submit" name="boletos" id="boletos" value="Comprar boletos"/></a>
+    <h1 align="center">Regístrate en Cinépolis</h1>
+    <form method="post" action="" enctype="text/plain">
+        <fieldset>
+            <table>
+                <legend>Crear una cuenta</legend>
+                <thead>
+                    <td><label for="usuario">Nombre de Usuario: </label>
+                    <input type="usuario" name="usuario" maxlength="15" placeholder="N. Usuario" required/></td>
+
+                    <td><label for="pass">Password: </label>
+                    <input type="password" name="pass" maxlength="15" placeholder="Password" size="22" required/></td>
+
+                    <td><label for="cp">Confirma tu Password:</label>
+                    <input type="text" name="cp" id="cp" maxlength="25" placeholder="Confirmar Password"/></td>
+                </thead>
+
+                <tbody>
+                    <td><label for="correo">E-mail: </label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo electrónico" size="32"/></td>
+
+                    <td><label for="fechan">Fecha de nacimiento: </label>
+                    <input type="date" name="fechan" placeholder="Fecha de Nacimiento"/></td>
+
+                    <td><input type="submit" name="enviar" id="enviar" value="Crear Cuenta"/></td>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <br/>
+
+        <fieldset>
+            <legend>¿Ya tienes una cuenta?</legend><br/>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" maxlength="15" placeholder="usuario" title="Nombre de usuario"/><br/><br/>
+
+            <label for="pass">Password: </label>
+            <input type="password" name="pass" maxlength="15" placeholder="Password" size="29" required/><br/><br/>
+    
+            <input type="submit" name="enviar" id="enviar" value="Ingresar"/>
+    
+        </fieldset>
+    </form>   
+</body>
+</html>
