@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="http://amei.mx/wp-content/uploads/2019/03/png-internet-internet-icon-1600.png"/>
+    <title>Servicios de Internet y Telefonía</title>
+    <link rel="stylesheet" href="Estilos_Formularios.css">
+</head>
+<body>
+    <h1>Servicios de internet y Telefonía</h1><br/>
+    <h2>Contrato de Servicios</h2><br/>
+
+    <form method="post" action="" enctype="text/plain">
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Nombre" size="25" title="Nombre" required/></td><br/>
+                        <td><label for="Ap">Apellido paterno:</label>
+                        <input type="text" id="Ap" placeholder="Apellido paterno" size="25" title="Ap" required/></td>
+                        <td><label for="Am">Apellido materno:</label>
+                        <input type="text" id="Am" placeholder="Apellido materno" size="25" title="Am" required/>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <select size="7" multiple>
+                        <optgroup label="Ciudad">
+                            <option value="1" selected>Cd. México</option>
+                            <option value="2">San Luis Potosí</option>
+                            <option value="3">Monterrey</option>
+                            <option value="4">Matehuala</option>
+                            <option value="5">Cd. Valles</option>
+                            <option value="6">Querétaro</option>
+                            <option value="7">Guanajuato</option>
+                            <option value="8">Puebla</option>
+                            <option value="9">Oaxaca</option>
+                            <option value="10">Mérida</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Servicio a contratar</legend>
+            <h4 id="serv">Selecciona el tipo de servicio a contratar</h4>
+            <input id="serv" type="checkbox" id="forma1" value="tdc" checked/>
+            <label for="forma1" >Línea telefónica</label>
+
+            <input id="serv" type="checkbox" id="forma2" value="efe" checked/>
+            <label for="forma2">Servicio de Internet</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Forma de pago</legend>
+            <h4 id="serv">Elige la froma de pago</h4>
+            <input type="radio" id="tdc" value="f" class="circle"/>
+            <label for="tdc">TDC</label><br/>
+
+            <input type="radio" id="tdd" value="f" class="circle" checked/>
+            <label for="tdd">Tarjeta de débito</label><br/>
+
+            <input type="radio" id="pe" value="f" class="circle"/>
+            <label for="pe">Pago en efectivo</label><br/>
+
+            <input type="radio" id="pmc" value="f" class="circle"/>
+            <label for="pmc">Pago mediante cheque</label><br/>
+
+            <input type="radio" id="tb" value="f" class="circle"/>
+            <label for="tb">Transferencia bancaria</label><br/>
+
+            <input type="radio" id="db" value="f" class="circle"/>
+            <label for="db">Depósito bancario</label><br/>
+
+            <input type="radio" id="po" value="f" class="circle"/>
+            <label for="po">Pago en Oxxo</label><br/><br/>
+
+            <input type="submit" id="enviar" value="Enviar datos"/>
+            <input type="reset" id="borrar" value="Borrar datos"/>
+        </fieldset>
+    </form>
+
+    <h2>Práctica 5</h2>
+    <h3>HTML5-CSS</h3> 
+    <h3>Primavera 2023</h3>
+</body>
+</html>
