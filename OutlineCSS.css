@@ -1,0 +1,86 @@
+#titulo
+{
+   background-color:rgb(159, 193, 255);
+   text-align: center;
+   width: 99%;
+   margin: 15px auto;
+}
+
+#propiedades
+{
+   background-color:rgb(159, 193, 255);
+   text-align: left;
+   width: 20%;
+}
+
+#outline1
+{
+    display:block;
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(183, 208, 255);
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: cornflowerblue;
+    outline-width: thin;
+}
+
+#outline2
+{
+    display:block;
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(183, 208, 255);
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: cornflowerblue;
+    outline-width: medium;
+}
+
+#outline3
+{
+    display:block;
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(183, 208, 255);
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: cornflowerblue;
+    outline-width: thick;
+}
+
+#outline4
+{
+    display:block;
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+    margin: 15px auto;
+    outline-style: solid;
+    outline-style: dotted;
+}
+
+#outline5
+{
+    display:block;
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+    margin: 15px auto;
+    outline-style: solid;
+    outline-style: dashed;
+}
+
+#outline6
+{
+    margin: 30px;
+    border: 1px solid cornflowerblue;
+    outline: 1px solid black;
+    outline-offset: 15px;
+}
