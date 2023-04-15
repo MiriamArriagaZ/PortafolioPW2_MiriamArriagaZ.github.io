@@ -1,0 +1,57 @@
+#box
+{
+    position: absolute;
+    left: 1025px;
+    top: 30px;
+    border: 8px solid rgb(190, 255, 212);
+    background-color: rgb(190, 255, 212);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 230%;
+    border-radius: 10px;
+}
+
+*
+{
+    list-style: none;
+}
+
+.nav li a:hover
+{
+    border:1px solid black;
+    background: rgb(6, 40, 103);
+    color: white;
+}
+
+.nav li ul 
+{
+    display:none;
+    position:absolute;
+}
+
+.nav li:hover >ul
+{
+    display:block;
+}
+
+.nav li ul li
+{
+    position: relative;
+}
+
+.nav li ul li ul
+{
+    right:-140px;
+    top:0px;
+}
+
+a
+{
+    text-align: center;
+    display:block;
+    width: 200px;
+    padding:20px;
+    border-radius: 15px;
+    border:1px solid black;
+    background: cornflowerblue;
+    font-size: 128%;
+}
