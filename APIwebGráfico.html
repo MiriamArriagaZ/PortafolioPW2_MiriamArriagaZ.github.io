@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Mes', 'Agua, luz, etc.', 'Comida, etc.'],
+          ['Enero',  1350,      850],
+          ['Febrero',  1200,      920],
+          ['Marzo',  1420,       740],
+          ['Abril',  990,      1100],
+          ['Mayo',  1120,      750],
+          ['Junio',  1400,      860]
+        ]);
+
+        var options = {
+          title: 'Gastos mensuales',
+          hAxis: {title: 'Mes',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var options={
+          widht: 400,
+          height: 240,
+          colors: ['#AED6F1', 'C39BD3']
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <style>
+      *{
+        color: white;
+        top:95px;
+      }
+    </style>
+  </head>
+  <body bgcolor="black">
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+  </body>
+</html>
