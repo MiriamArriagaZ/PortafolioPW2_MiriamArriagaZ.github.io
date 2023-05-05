@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="https://www.upslp.edu.mx/Reinscripcion/Promedio/_img/logo.png"/>
+    <link rel="stylesheet" href="Práctica4_RFC.css">
+    <script src="Práctica4_RFC.js"></script>
+    <title>Solicita RFC</title>
+</head>
+<body bgcolor="black">
+    <hr color="ce93d8">
+    <h1>Solicita tu RFC</h1>
+    <hr color="ce93d8">
+
+    <form method="post" action="" enctype="text/plain">
+        <label for="nombre">Nombre:</label><br/>
+        <input type="text" id="nombre" placeholder="Nombre" title="Solo primer nombre" required/></td><br/><br/>
+        <td><label for="Ap">Apellido paterno:</label><br/>
+        <input type="text" id="Ap" placeholder="Apellido paterno" title="Ap" required/></td><br/><br/>
+        <td><label for="Am">Apellido materno:</label><br/>
+        <input type="text" id="Am" placeholder="Apellido materno" title="Am" required/><br/><br/>
+        <td><label for="An">Año de nacimiento:</label><br/>
+        <input type="number" id="An" placeholder="Año de nacimiento" title="An" required/><br/><br/>
+        <td><label for="Mn">Mes de nacimiento:</label><br/>
+        <input type="number" id="Mn" placeholder="Mes de nacimiento" title="Ms" required/><br/><br/>
+        <td><label for="Am">Día de nacimiento:</label><br/>
+        <input type="number" id="Dn" placeholder="Día de nacimiento" title="Dn" required/><br/><br/>
+        <label for="resul">Su RFC es:</label><br/>
+        <input type="text" name="resul" id="resul"><br/><br/>
+
+        <input type="button" id="RFC" value="Solicitar RFC" onclick="solicitaRFC()"/><br/><br/><br/>
+        <input type="reset" id="borrar" value="Borrar datos"/>
+    </form>
+</body>
+</html>

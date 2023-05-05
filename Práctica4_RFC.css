@@ -1,0 +1,29 @@
+*
+{
+    text-align: center;
+    color: white;
+}
+
+#nombre, #Ap, #Am, #An, #Mn, #Dn, #resul
+{
+    width: 20%;
+    color: black;
+}
+
+#resul
+{
+    background-color: rgb(177, 204, 254);
+}
+
+h1
+{
+    color: rgb(186, 155, 196);
+}
+
+#RFC, #borrar
+{
+    background-color: rgb(186, 155, 196);
+    color: black;
+    width: 28%;
+    padding: 15px;
+}
