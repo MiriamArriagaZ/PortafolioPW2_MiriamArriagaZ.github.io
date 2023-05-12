@@ -2,17 +2,19 @@
 <html>
 <head>
 	<title>Obtener totales del formulario</title>
-    <link rel="stylesheet" href="ObtenerTotales.css">
+    	<link rel="stylesheet" href="ObtenerTotales.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
 </head>
+<!--Aquí se inicia el script para las funciones-->
 <script>
 	var total;
-
+	//Se genera el contador inicializado en 0
 	function califica()
-    {
+	{
 		var total=0;
+	//Este ciclo acumula los puntos en el contador
     	for (var x=1;x<=6;x++)
     	{
         	var res=0;
@@ -26,6 +28,7 @@
         	total=total+res;
         	document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
         }
+	//Se evalúa el total
         if(total==30)
         	document.getElementById("comentario").innerHTML="Verdaderamente eres FAN";
         else
@@ -36,7 +39,7 @@
         	document.getElementById("comentario").innerHTML="¿Conoces Haikyuu enserio?";
     }
 </script>
-
+<!--Se inicia el cuerpo del código-->
 <body>
     <div id="contiene">
 		<img src="Haikyuu2.jpg" type="image/jpg" width="400" height="100"/>
@@ -68,7 +71,7 @@
 				<img id="img2" src="Chuki.png" type="image/png" width="100" height="100"/><br/><br/>
 				<hr color="orange"/><br/>
 
-        		<li>¿Quiénes es el mejor Capitán de toda la serie?</li>
+        			<li>¿Quiénes es el mejor Capitán de toda la serie?</li>
 				<input type="radio" name="r4" id="r4" value="5"/>Bokuto Koutaro<br/>
 				<input type="radio" name="r4" id="r4" value="0"/>Hinata Shouyo<br/>
 				<input type="radio" name="r4" id="r4" value="0"/>Kenma Kozume<br/>
@@ -93,8 +96,10 @@
 				<hr color="orange"/><br/>
 			</ul>
 		</div>
+		<!--Botón para llamar a la función en el script-->
 		<input type="button" id="boton" value="Calificar" onclick="califica()">
 		</form>
+	    	<!--En esta parte se pondrán los resultados obtenidos en la función-->
 		<p></p>
 		<p id="total">   </p>
 		<p id="comentario">   </p>
