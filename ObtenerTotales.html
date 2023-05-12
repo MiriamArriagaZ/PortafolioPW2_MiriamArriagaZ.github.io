@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="ObtenerTotales.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+</head>
+<script>
+	var total;
+
+	function califica()
+    {
+		var total=0;
+    	for (var x=1;x<=6;x++)
+    	{
+        	var res=0;
+        	var nom="r"+x;
+        	var resul=document.getElementsByName(nom);
+        	for(var i=0;i<resul.length;i++)
+        	{
+            	if(resul[i].checked==true)
+            	    res=parseInt(resul[i].value);
+        	}
+        	total=total+res;
+        	document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==30)
+        	document.getElementById("comentario").innerHTML="Verdaderamente eres FAN";
+        else
+        	if(total<30 && total>15)
+        	document.getElementById("comentario").innerHTML="Te gusta Haikyuu!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="¿Conoces Haikyuu enserio?";
+    }
+</script>
+
+<body>
+    <div id="contiene">
+		<img src="Haikyuu2.jpg" type="image/jpg" width="400" height="100"/>
+		<h2>¿Qué tanto sabes de Haikyuu?</h2>
+		<form>
+		<div id="preg">
+			<ul type="none">
+				<li>¿Cómo se llama nuestro protagonista?</li>
+				<input type="radio" name="r1" id="r1" value="0"/>Hinata Hyuga<br/>
+				<input type="radio" name="r1" id="r1" value="5"/>Hinata Shouyo<br/>
+				<input type="radio" name="r1" id="r1" value="0"/>Hinata Choyo<br/>
+				<input type="radio" name="r1" id="r1" value="0"/>Inata Hyunga<br/><br/>
+				<img id="img2" src="Hinata.png" type="image/png" width="150" height="100"/><br/><br/>
+				<hr color="orange"/><br/>
+		
+				<li>¿Quién es el mejor líbero?</li>
+				<input type="radio" name="r2" id="r2" value="0"/>Hinata Hyuga<br/>
+				<input type="radio" name="r2" id="r2" value="0"/>Tsukkishima Tobio<br/>
+				<input type="radio" name="r2" id="r2" value="5"/>Nishinoya Yuu<br/>
+				<input type="radio" name="r2" id="r2" value="0"/>Luffy Roronoa<br/><br/>
+				<img id="img2" src="Kageyama.png" type="image/png" width="100" height="100"/><br/><br/>
+				<hr color="orange"/><br/>
+
+				<li>¿Cuántos volúmenes tiene Haikyuu?</li>
+				<input type="radio" name="r3" id="r3" value="5"/>45<br/>
+				<input type="radio" name="r3" id="r3" value="0"/>25<br/>
+				<input type="radio" name="r3" id="r3" value="0"/>55<br/>
+				<input type="radio" name="r3" id="r3" value="0"/>46<br/><br/>
+				<img id="img2" src="Chuki.png" type="image/png" width="100" height="100"/><br/><br/>
+				<hr color="orange"/><br/>
+
+        		<li>¿Quiénes es el mejor Capitán de toda la serie?</li>
+				<input type="radio" name="r4" id="r4" value="5"/>Bokuto Koutaro<br/>
+				<input type="radio" name="r4" id="r4" value="0"/>Hinata Shouyo<br/>
+				<input type="radio" name="r4" id="r4" value="0"/>Kenma Kozume<br/>
+				<input type="radio" name="r4" id="r4" value="0"/>Kageyama Tobio<br/><br/>
+				<img id="img2" src="Noya.png" type="image/png" width="100" height="100"/><br/><br/>
+				<hr color="orange"/><br/>
+
+				<li>¿Qué deporte se juega en la serie?</li>
+				<input type="radio" name="r5" id="r5" value="0"/>Bádminton<br/>
+				<input type="radio" name="r5" id="r5" value="0"/>Basketball<br/>
+				<input type="radio" name="r5" id="r5" value="0"/>Football<br/>
+				<input type="radio" name="r5" id="r5" value="5"/>Voleyball<br/><br/>
+				<img id="img2" src="Asahi.png" type="image/png" width="100" height="100"/><br/><br/>
+				<hr color="orange"/><br/>
+
+				<li>¿Quién es el mejor personaje de toda la animación?</li>
+				<input type="radio" name="r6" id="r6" value="5"/>Tsukkishima Kei<br/>
+				<input type="radio" name="r6" id="r6" value="0"/>Tanaka Ryonuske<br/>
+				<input type="radio" name="r6" id="r6" value="0"/>Kenma Kozume<br/>
+				<input type="radio" name="r6" id="r6" value="0"/>Kageyama Tobio<br/><br/>
+				<img id="img2" src="Yams.png" type="image/png" width="100" height="100"/><br/><br/>
+				<hr color="orange"/><br/>
+			</ul>
+		</div>
+		<input type="button" id="boton" value="Calificar" onclick="califica()">
+		</form>
+		<p></p>
+		<p id="total">   </p>
+		<p id="comentario">   </p>
+		<iframe frameborder="0" width="600" height="500"></iframe>
+	</div>
+</body>
+</html>

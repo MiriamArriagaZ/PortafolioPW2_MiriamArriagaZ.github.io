@@ -1,0 +1,28 @@
+*
+{
+    background-color: black;
+    color: white;
+}
+
+#preg
+{
+    margin-right: 3%;
+}
+
+#contiene
+{
+    text-align: center;
+}
+
+li
+{
+    font-family: cursive;
+}
+
+#boton
+{
+    background-color: orange;
+    padding: 2%;
+    width: 50%;
+    color: black;;
+}
