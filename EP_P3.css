@@ -1,0 +1,22 @@
+*
+{
+    color: white;
+    text-align: center;
+    font-family:monospace;
+}
+
+#nombre, #fecha
+{
+    color: black;
+    width: 15%;
+    font-family: cursive;
+}
+
+#Enviar, #borrar
+{
+    color: black;
+    width: 28%;
+    padding: 8px;
+    font-family: cursive;
+    background-color: rgb(212, 176, 222);
+}
