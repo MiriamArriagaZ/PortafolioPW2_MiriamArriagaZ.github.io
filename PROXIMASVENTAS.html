@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="PROXIMASVENTAS.css">
+    <link rel="stylesheet" href="PROXIMASVENTASFUN.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <body background="FONDO.png" style="background-repeat:no-repeat;background-size: 100%; background-attachment: fixed;">
+    
+    
+        <h1>LIBRERIA
+        </h1>
+       <br><br> <nav id="menu">
+            <ul>
+                <li><a href="MENUPRINCIPAL.html">Inicio</a></li>
+                <li><a href="NUESTROSLIBROS.html">Nuestros libros</a>
+                <ul>
+                   
+                    <li><a href="PROXIMASVENTAS.html">Próximas ventas</a></li>
+                    <li><a href="MASVENDIDOS.html">Los más vendidos</a></li>
+                    <li><a href="TIENDAENLINEA.html">Compra en línea</a></li>
+                </ul></li>
+                <li><a>Únete a la comunidad</a>
+                <ul>
+                    <li><a href="Registro.html">Registrarme</a></li>
+                    <li><a href="SobreLibros.html">Sobre libros</a></li>
+                </ul></li>
+                <li><a href="Blog_Contacto.html">Conecta con nosotros</a>
+                    <ul>
+                        <li><a href="BLOG.html">Blog</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul></li>
+                <li><a href="Ubicacion.html">Ubicación</a>
+                    <ul>
+                        <li><a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                    </ul></li>
+            </ul>
+        </nav>
+        <br><br><br><br>
+        <h1>PROXIMAS VENTAS</h1>
+
+			<div class="container-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="cart-product">
+						<div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito"></span>
+                        </div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="DISPONIBLE1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Aristóteles y Dante descubren los secretos del universo</h2>
+					<p class="price">$286.20</p>
+					<button><a href="https://www.amazon.com.mx/Arist%C3%B3teles-Dante-descubren-secretos-universo/dp/6070760867/ref=d_pd_sbs_sccl_2_6/135-1163443-0854234?pd_rd_w=ly5UQ&content-id=amzn1.sym.c9a1116c-071c-40ed-bd6b-741144246385&pf_rd_p=c9a1116c-071c-40ed-bd6b-741144246385&pf_rd_r=JMS5NAKP0N8KA6MCTN30&pd_rd_wg=vLBLp&pd_rd_r=360d0732-3e6c-450e-9b1e-4b61a19aaeb0&pd_rd_i=6070760867&psc=1"><input type="button" value="ORDENA PREVENTA" Id="colorea"></a></button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="DISPONIBLE2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Este dolor no es mío. </h2>
+					<p class="price">$359.42</p>
+					<button><a href="https://www.amazon.com.mx/Identifica-resuelve-traumas-familiares-heredados/dp/8484456811/ref=sr_1_4?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=XN16Y9IHVL6F&keywords=libros&qid=1684702493&s=books&sprefix=libros+%2Cstripbooks%2C142&sr=1-4"><input type="button" value="ORDENA PREVENTA" Id="colorea"></a></button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="DISPONIBLE3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>El gato que venía del cielo </h2>
+					<p class="price">$129.00</p>
+					<button><a href=""><input type="button" value="COMPRAR PREVENTA" Id="colorea"></a></button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="DISPONIBLE4.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Haikyu!! (3 In 1) N.1</h2>
+					<p class="price">$199.00</p>
+					<button><a href=""><input type="button" value="COMPRAR PREVENTA" Id="colorea"></a></button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="DISPONIBLE5.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Nana n.1</h2>
+					<p class="price">$129.00</p>
+					<button><a href="_https://www.amazon.com.mx/Nana-n-1-Ai-Yazawa/dp/6076361190/ref=d_pd_sbs_sccl_2_5/135-1163443-0854234?pd_rd_w=fHbH8&content-id=amzn1.sym.c9a1116c-071c-40ed-bd6b-741144246385&pf_rd_p=c9a1116c-071c-40ed-bd6b-741144246385&pf_rd_r=YDXGYZ1KHR7GXXM2KHJJ&pd_rd_wg=gR0Cr&pd_rd_r=d6201bfd-8ed4-41c1-a222-f77283fcb1df&pd_rd_i=6076361190&psc=1"><input type="button" value="COMPRAR PREVENTA" Id="colorea"></a></button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="DISPONIBLE6.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Wotakoi: Love Is Hard for Otaku Complete Manga Box</h2>
+					<p class="price">$1200.79</p>
+					<button><a href="https://www.amazon.com.mx/Wotakoi-Love-Otaku-Complete-Manga/dp/1646516362/ref=sr_1_59?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9WWEAXJJ837I&keywords=MANGAS&qid=1684703337&s=books&sprefix=mangas%2Cstripbooks%2C178&sr=1-59"><input type="button" value="COMPRAR PREVENTA" Id="colorea"></a></button>
+				</div>
+			</div>
+			
+		</div>
+		
+<script type="text/javascript">
+ var vsid = "si25461756fc341";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+ })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Libros</title>
+    <link rel="stylesheet" href="MENUPRINCIPAL.css">
+    <link rel="stylesheet" href="SobreLibros.css">
+    <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+</head>
+<script>
+    var total;
+    function califica()
+    {
+        var total=0;
+        for (var x=1;x<=6;x++)
+        {
+            var res=0;
+            var nom="r"+x;
+            var resul=document.getElementsByName(nom);
+            for(var i=0;i<resul.length;i++)
+            {
+                if(resul[i].checked==true)
+               res=parseInt(resul[i].value);
+            }
+            total=total+res;
+            document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total>=20)
+            document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+            if(total==15)
+                document.getElementById("comentario").innerHTML="Regular!!";
+        else
+            if(total<=15)
+            document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+function generar()
+{
+    var doc = new jsPDF();
+    doc.setFontSize(40);
+    doc.setTextColor(9,7,121);
+    doc.text(40, 20, "Conceptos basicos");
+    doc.setTextColor(17, 122, 209); 
+    doc.setFontSize(30);
+    doc.text(50, 35, "Resultados del test");
+    doc.setTextColor(0,0,0);
+    doc.setFontSize(10);
+    doc.text(20, 50, "30 puntos. Muy bien. \r Todas tus respuestas son correctas");
+    doc.text(20, 70, "20 - 15 puntos. Regular. \r Obtuviste 4 o 3 preguntas correctas");
+    doc.text(20, 90, "10 puntos. \r Obtuviste 2 preguntas correctas");
+    doc.text(20, 110, "5 - 0 puntos. \r Te falta cultura general");
+
+    var string = doc.output('datauristring');
+
+    $('iframe').attr('src', string);
+}
+</script>
+<body background="SobreLibros.jpg" style="background-repeat:no-repeat;background-size: 110%; background-attachment: fixed;">
+    <h1>¿Qué tanto sabes sobre libros?</h1><br/><br/>
+    <nav id="menu">
+        <ul>
+            <li><a href="MENUPRINCIPAL.html">Inicio</a></li>
+            <li><a href="NUESTROSLIBROS.html">Nuestros libros</a>
+            <ul>
+                <li><a href="PROXIMASVENTAS.html">Próximas ventas</a></li>
+                <li><a href="MASVENDIDOS.html">Los más vendidos</a></li>
+                <li><a href="TIENDAENLINEA.html">Compra en línea</a></li>
+            </ul></li>
+            <li><a >Únete a la comunidad</a>
+            <ul>
+                <li><a href="Registro.html">Registrarme</a></li>
+                <li><a href="SobreLibros.html">Sobre libros</a></li>
+            </ul></li>
+            <li><a href="Blog_Contacto.html">Conecta con nosotros</a>
+                <ul>
+                    <li><a href="BLOG.html">Blog</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul></li>
+            <li><a href="Ubicacion.html">Ubicación</a>
+                <ul>
+                    <li><a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                </ul></li>
+        </ul>
+    </nav><br/><br/><br/>
+
+    <div id="contiene">
+		<form>
+		<div id="preg">
+			<ul type="none">
+				<li>¿Cuál es el libro más popular de Jane Austen?</li><br/>
+				<input type="radio" name="r1" id="r1" value="0"/>100 años de Soledad<br/>
+				<input type="radio" name="r1" id="r1" value="5"/>Orgullo y Prejuicio<br/>
+				<input type="radio" name="r1" id="r1" value="0"/>Madame Bovary<br/>
+				<input type="radio" name="r1" id="r1" value="0"/>Cómo matar un ruiseñor<br/><br/>
+				<hr/><br/>
+		
+				<li>¿Quién es el autor del libro recientemente nombrado como el mejor del 2022 titulado "Almendra"?</li><br/>
+				<input type="radio" name="r2" id="r2" value="0"/>Haruki Murakami<br/>
+				<input type="radio" name="r2" id="r2" value="0"/>Hiromi Kawakami<br/>
+				<input type="radio" name="r2" id="r2" value="0"/>Kim Young-ha<br/>
+				<input type="radio" name="r2" id="r2" value="5"/>Won-pyung Sohn<br/><br/>
+				<hr/><br/>
+
+				<li>¿Cuál es la fecha de publicación original del clásico titulado "El Principito"?</li><br/>
+				<input type="radio" name="r3" id="r3" value="5"/>6 de abril de 1943<br/>
+				<input type="radio" name="r3" id="r3" value="0"/>30 de abril de 1943<br/>
+				<input type="radio" name="r3" id="r3" value="0"/>6 de abril de 1985<br/>
+				<input type="radio" name="r3" id="r3" value="0"/>4 de abril de 1999<br/><br/>
+				<hr/><br/>
+
+        		<li>¿Cuál es el título del libro más popular de Paulo Coelho?</li><br/>
+				<input type="radio" name="r4" id="r4" value="5"/>El Alquimista<br/>
+				<input type="radio" name="r4" id="r4" value="0"/>Adulterio<br/>
+				<input type="radio" name="r4" id="r4" value="0"/>Once minutos<br/>
+				<input type="radio" name="r4" id="r4" value="0"/>Verónika decide morir<br/><br/>
+				<hr/><br/>
+
+				<li>¿Quién es el autor más importante del siglo de oro español?</li><br/>
+				<input type="radio" name="r5" id="r5" value="0"/>Leonardo DaVinci<br/>
+				<input type="radio" name="r5" id="r5" value="5"/>Miguel de Cervantes<br/>
+				<input type="radio" name="r5" id="r5" value="0"/>Gabriel García Márquez<br/>
+				<input type="radio" name="r5" id="r5" value="0"/>Luis Miguel<br/><br/>
+				<hr/><br/>
+
+				<li>¿Quién es el autor más destacado de Japón?</li><br/>
+				<input type="radio" name="r6" id="r6" value="0"/>Tsukkishima Kei<br/>
+				<input type="radio" name="r6" id="r6" value="0"/>Yukio Mishima<br/>
+				<input type="radio" name="r6" id="r6" value="0"/>Banana Yoshimoto<br/>
+				<input type="radio" name="r6" id="r6" value="5"/>Haruki Murakami<br/><br/>
+				<hr/><br/>
+			</ul>
+		</div>
+		<input type="button" id="boton" value="Calificar" onclick="califica()">
+        <input type="button" id="pdf" value="Generar PDF" onclick="generar()">
+		</form>
+		<p></p>
+    <p id="total">   </p>
+    <p id="comentario">   </p>
+    <iframe frameborder="0" width="600" height="500"></iframe>
+	</div>
+    <hr style="padding:5%; background-color: lightslategray;">
+
+<script type="text/javascript">
+ var vsid = "si25461756fc341";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+ })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+*
+{
+    text-align: center;
+}
+
+input
+{
+    background-color: rgb(168, 186, 220);
+}
+
+#enviar
+{
+    padding: 8px;
+    width: 30%;
+    background-color: #b688c3;
+    font-family: cursive;
+}
+
+hr
+{
+    background-color: lightslategray;
+    padding: 2px;
+}
+
+h2
+{
+    font-family: 'Chewy', cursive;
+    color: black;
+    font-weight:bold;
+    text-shadow: -1px 0 #648be5, 0 1px #648be5, 1px 0 #648be5, 0 -1px #648be5, -2px 2px 0 #648be5, 2px 2px 0 #648be5, 1px 1px #648be5, 2px 2px#648be5, 3px 3px#5484f3, 4px 4px #5484f3, 5px 5px #5484f3;
+    font-size: 32px;
+}
+
+label
+{
+    font-family: cursive;
+}

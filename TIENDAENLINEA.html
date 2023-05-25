@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="TIENDAENLINEA.css">
+    <link rel="stylesheet" href="TIENDAENLINEAFUN.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+    <body background="FONDO.png" style="background-repeat:no-repeat;background-size: 100%; background-attachment: fixed;">
+    
+ 
+
+    
+        <h1>LIBRERIA
+        </h1>
+       <br><br> <nav id="menu">
+            <ul>
+                <li><a href="MENUPRINCIPAL.html">Inicio</a></li>
+                <li><a href="NUESTROSLIBROS.html">Nuestros libros</a>
+                <ul>
+                   
+                    <li><a href="PROXIMASVENTAS.html">Próximas ventas</a></li>
+                    <li><a href="MASVENDIDOS.html">Los más vendidos</a></li>
+                    <li><a href="TIENDAENLINEA.html">Compra en línea</a></li>
+                </ul></li>
+                <li><a>Únete a la comunidad</a>
+                <ul>
+                    <li><a href="Registro.html">Registrarme</a></li>
+                    <li><a href="SobreLibros.html">Sobre libros</a></li>
+                </ul></li>
+                <li><a href="Blog_Contacto.html">Conecta con nosotros</a>
+                    <ul>
+                        <li><a href="BLOG.html">Blog</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul></li>
+                <li><a href="Ubicacion.html">Ubicacion</a>
+                    <ul>
+                        <li><a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                    </ul></li>
+            </ul>
+        </nav>
+        <br><br><br><br>
+        <h1>Tienda</h1>
+
+			<div class="container-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="cart-product">
+						<div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito"></span>
+                        </div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="CANCIONAQUILES.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>La canción de Aquiles</h2>
+					<p class="price">$314.56</p>
+					<button><a href="https://www.amazon.com.mx/canci%C3%B3n-Aquiles-Madeline-Miller/dp/6075508058/ref=asc_df_6075508058/?tag=gledskshopmx-20&linkCode=df0&hvadid=451028174876&hvpos=&hvne
+						tw=g&hvrand=2128560595871801500&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9142495&hvtargid=pla-1345256846385&psc=1"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="MEDIANOCHE.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>La biblioteca de la medianoche</h2>
+					<p class="price">$319.20</p>
+					<button><a href="https://www.amazon.com.mx/biblioteca-media-noche-Matt-Haig/dp/607550771X/ref=pd_bxgy_img_sccl_2/135-1163443-0854234?pd_rd_w=7oK7J&content-id=amzn1.sym.073f9082-4467-4f70-939c-f1e02d32ade1&pf_rd_p=073f9082-4467-4f70-939c-
+						f1e02d32ade1&pf_rd_r=T591CAGPGSE6AKCBXS0W&pd_rd_wg=i09V7&pd_rd_r=642bad2e-6c95-4382-9259-3b1638ec8871&pd_rd_i=607550771X&psc=1"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="BAILARINAS.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>La bailarina de Auscwitz</h2>
+					<p class="price">$398.00</p>
+					<button><a href="https://www.amazon.com.mx/BAILARINA-AUSCHWITZ-EDITH-EGER/dp/6070749006/ref=d_pd_sbs_sccl_2_12/135-1163443-0854234?pd_rd_w=1dZNn&content-id=amzn1.sym.c9a1116c-071c-40ed-bd6b-741144246385&pf_rd_p=c9a1116c-071c-40ed-bd6b-741144246385&pf_rd
+					_r=DMVHRTM2VX8GZBHVKAFB&pd_rd_wg=mEMw8&pd_rd_r=916631bc-ac13-433a-88d3-9fc436d8ab5d&pd_rd_i=6070749006&psc=1"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="MANGA1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>My Dress-Up Darling N.2 </h2>
+					<p class="price">$149.00</p>
+					<button><a href="https://www.amazon.com.mx/My-Dress-Up-Darling-N-2-Editorial/dp/6076366435/ref=sr_1_7?crid=
+					2U7ZD9J65FQDG&keywords=manga+panini&qid=1684690829&s=books&sprefix=manga%2Cstripbooks%2C189&sr=1-7"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="MANGA2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Komi Can't Communicate N.3</h2>
+					<p class="price">$139.00</p>
+					<button><a href="https://www.amazon.com.mx/Komi-Cant-Communicate-N-3-tomohito/dp/6076361646/ref=d_pd_sbs_sccl_2_1/135-1163443-0854234?pd_rd_w=VVOJD&content-id=amzn1.sym.c9a1116c-071c-40ed-bd6b-741144246385&pf_rd_p=c9a1116c-071c-40ed-bd6b-
+					741144246385&pf_rd_r=DW41RHMHJ7N59EFS51N9&pd_rd_wg=SklP2&pd_rd_r=263ad572-cc4c-434f-be5b-4217f7a75c32&pd_rd_i=6076361646&psc=1"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="MANGA4.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Chain Saw Man N.7</h2>
+					<p class="price">$139.00</p>
+					<button><a href="https://www.amazon.com.mx/Chain-Saw-Man-Tatsuki-Fujimoto/dp/6075689141/ref=pd_bxgy_img_sccl_1/135-1163443-0854234?pd_rd_w=oGgw6&content-id=amzn1.sym.073f9082-4467-4f70-939c-f1e02d32ade1&pf_rd_p=073f9082-4467-
+					4f70-939c-f1e02d32ade1&pf_rd_r=4VBAVPWAE34JZN5E269F&pd_rd_wg=nWGSG&pd_rd_r=d90f8022-b044-4815-b213-4ff3f9cb620a&pd_rd_i=6075689141&psc=1"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="MANGA3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Tokyo Revengers N.9</h2>
+					<p class="price">$131.41</p>
+					<button><a href="https://www.amazon.com.mx/Tokyo-Revengers-N-9-Editorial-Panini/dp/6076364378/ref=d_pd_sbs_sccl_2_6/135-1163443-0854234?pd_rd_w=LFi3A&content-id=amzn1.sym.c9a1116c-071c-40ed-bd6b-741144246385&pf_rd_p=c9a1116c-
+					071c-40ed-bd6b-741144246385&pf_rd_r=ZG2RCVVQ974MJMRKPJPG&pd_rd_wg=Qa0gp&pd_rd_r=9c71d8ad-a0c3-492f-b619-6d080b91c84b&pd_rd_i=6076364378&psc=1"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="INVINESPERADO.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Un invitado inesperado </h2>
+					<p class="price">$199.00</p>
+					<button><a href="https://www.amazon.com.mx/invitado-inesperado-No-hay-
+					escapatoria/dp/6073179480/ref=sr_1_4?keywords=libros+de+misterio+y+crimen&qid=1684691552&s=books&sprefix=LIBROS+DE+MI%2Cstripbooks%2C166&sr=1-4"><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="INSTITUTO.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>El Instituto</h2>
+					<p class="price">$469</p>
+					<button><a href="https://www.amazon.com.mx/El-Instituto-Stephen-King/dp/6073184336/ref=sr_1_12_sspa?keywords=libros+de
+				+misterio+y+crimen&qid=1684691552&s=books&sprefix=LIBROS+DE+MI%2Cstripbooks%2C166&sr=1-12-spons&psc=1&spLa=ZW5jcnlwd
+				GVkUXVhbGlmaWVyPUExWlM3SVg3VTFNV0YwJmVuY3J5cHRlZElkPUEwODIzNzI5M0tOUjJMOFNCTEtMMyZlbmNyeXB0ZWRBZElkPUEwMTAzMjg5MkJFSUZaSzdNOTcyRyZ3aWRnZXROYW1lPXNwX210ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="><input type="button" value="COMPRAR" Id="colorea"></a></button>
+				</div>
+			</div>
+		</div>
+
+       <script type="text/javascript">
+ var vsid = "si25461756fc341";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+ })();
+</script>
+</body>
+</html>
